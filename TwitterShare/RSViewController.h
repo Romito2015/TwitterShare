@@ -10,4 +10,12 @@
 
 @interface RSViewController : UIViewController
 
+- (IBAction)actionSendTweet:(UIBarButtonItem *)sender;
+
+@property (weak, nonatomic) IBOutlet UITextView *tweetTextView;
+
+
+- (void) configureTweetTextView;
+- (void) showAlertMaessage:(NSString *)message;
+
 @end
