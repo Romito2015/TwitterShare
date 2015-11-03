@@ -54,7 +54,6 @@
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
     
     if (buttonIndex != [alertView cancelButtonIndex]) {
-        NSLog(@"OK pressed");
         
         if ([SLComposeViewController isAvailableForServiceType:SLServiceTypeTwitter]) {
             
